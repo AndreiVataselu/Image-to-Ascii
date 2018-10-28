@@ -5,9 +5,7 @@ class PictureToAscii:
 
     def __init__(self, image_path):
         self.image_path = image_path
-
-        # The reason why I use shuffle is to create the same image
-        # with different characters
+        
         self.characters = '!%&@0$+B?=4*1QT;{X<"Fejs#Yc.|~Znk'
 
         try:
