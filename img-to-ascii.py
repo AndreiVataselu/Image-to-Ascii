@@ -32,7 +32,7 @@ class PictureToAscii:
         with open("picture.txt", "w") as art:
             for arr in picture_data:
                 for item in arr:
-                    # We divide the 256 pixels into 31 ranges of 8 pixels each
+                    # We divide the 256 pixels into 32 ranges of 8 pixels each
                     art.write("{0}".format(self.characters[int(item / 8)]))
                 art.write("\n")
 
