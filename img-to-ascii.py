@@ -26,7 +26,7 @@ class PictureToAscii:
         data = list(new_image.getdata())  # Get picture's grey scales pixels
 
         # Turn the 1D array of pixels into a 2D array so we can replace the pixels with ASCII chars
-        # thus creating the ASCII arty
+        # thus creating the ASCII art
         picture_data = [[data.pop(0) for i in range(width)] for j in range(height)]
 
         with open("picture.txt", "w") as art:
